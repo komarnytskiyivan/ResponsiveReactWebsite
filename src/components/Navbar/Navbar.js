@@ -37,27 +37,27 @@ function Navbar() {
                         </Link>
                     </li>
                     <li className="nav-item" onClick={closeMobileMenu}>
-                        <Link to="/" className="nav-links">
+                        <Link to="/PrintFile" className="nav-links">
                             Print file
                         </Link>
                     </li>
                     <li className="nav-item" onClick={closeMobileMenu}>
-                        <Link to="/" className="nav-links">
+                        <Link to="/History" className="nav-links">
                             History
                         </Link>
                     </li>
                     <li className="nav-item" onClick={closeMobileMenu}>
-                        <Link to="/" className="nav-links">
+                        <Link to="/AddPages" className="nav-links">
                             Add pages
                         </Link>
                     </li>
                     <li className="nav-btn" onClick={closeMobileMenu}>
                         {button ? (
-                            <Link to="/signin"className="btn-link">
+                            <Link to="/SignIn"className="btn-link">
                                 <Button buttonStyle="btn--outline">SignIn</Button>
                             </Link>
                         ):(
-                        <Link to="/signin" className="btn-link">
+                        <Link to="/SignIn" className="btn-link">
                         <Button buttonSize="btn--mobile" buttonStyle="btn--outline">SignIn</Button>
                         </Link>
                         )}
