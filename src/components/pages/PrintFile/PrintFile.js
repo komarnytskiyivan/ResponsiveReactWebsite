@@ -1,10 +1,10 @@
 import React from 'react'
-import HeroSection from '../../HeroSection/HeroSection'
+import PrintSection from '../../PrintFile/PrintSection'
 import {printFileObjOne} from './Data'
 function PrintFile() {
     return (
         <div>
-            <HeroSection {...printFileObjOne} />
+            <PrintSection {...printFileObjOne} />
         </div>
     )
 }

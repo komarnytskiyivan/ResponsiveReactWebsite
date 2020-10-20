@@ -1,10 +1,10 @@
 import React from 'react'
-import HeroSection from '../../HeroSection/HeroSection'
+import AddSection from '../../AddPages/AddSection'
 import {addPagesObjOne} from './Data'
 function AddPages () {
     return (
         <div>
-            <HeroSection {...addPagesObjOne} />
+            <AddSection {...addPagesObjOne} />
         </div>
     )
 }
