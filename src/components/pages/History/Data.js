@@ -1,11 +1,7 @@
 export const historyObjOne ={
     lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
-    topLine:'Explore DrukBox',
-    headLine: 'Unlimited printing with us',
-    description: 'Lets begin!',
-    buttonLabel: 'Get Started',
+    topLine:'History',
+    buttonLabel: 'Submit',
     imgStart: '',
     img: './assets/svg-1.svg',
     alt: 'DrukBox'

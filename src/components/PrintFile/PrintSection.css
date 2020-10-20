@@ -86,7 +86,14 @@ img{
     margin-bottom: 20px;
 }
 .home__add-file-input{
-    display: none;
+    padding: 8px 24px;
+    border-radius: 2px;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
 }
 .home__add-select{
     padding: 8px 24px;
@@ -101,8 +108,16 @@ img{
 .home__add-map{
     padding-bottom: 20px;
 }
-.home__add-time{
-    padding-bottom: 20px;
+.home__add-time-fieldset{
+    border: none;
+}
+.home__add-timepicker{
+    border-radius: 2px;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 @media screen and (max-width: 768px){
     .container{

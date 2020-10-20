@@ -1,10 +1,10 @@
 import React from 'react'
-import HeroSection from '../../HeroSection/HeroSection'
+import HistorySection from '../../HistorySection/HistorySection'
 import {historyObjOne} from './Data'
 function History() {
     return (
         <div>
-            <HeroSection {...historyObjOne} />
+            <HistorySection {...historyObjOne} />
         </div>
     )
 }
