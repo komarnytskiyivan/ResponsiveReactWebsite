@@ -4,6 +4,25 @@ import { FaBars, FaTimes} from 'react-icons/fa';
 import {Button} from '../Button/Button';
 import './Navbar.css';
 import { IconContext } from 'react-icons/lib'
+import { ReactComponent as BellIcon } from '../../icons/bell.svg';
+import { ReactComponent as MessengerIcon } from '../../icons/messenger.svg';
+import { ReactComponent as CaretIcon } from '../../icons/caret.svg';
+import { ReactComponent as PlusIcon } from '../../icons/plus.svg';
+import { ReactComponent as ArrowIcon } from '../../icons/arrow.svg';
+import { ReactComponent as BoltIcon } from '../../icons/bolt.svg';
+import DropDownMenu from '../DropDown/DropDown';
+function NavbarItem(props) {
+    const [open, setOpen] = useState(false); 
+    return (
+        <li>
+            <a href="#" className="icon-button" onClick={() => {setOpen(!open)}}>
+                {props.icon}
+            </a>
+
+            {open && props.children}
+        </li>
+    );
+}
 function Navbar() {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
@@ -61,6 +80,11 @@ function Navbar() {
                         <Button buttonSize="btn--mobile" buttonStyle="btn--outline">SignIn</Button>
                         </Link>
                         )}
+                    </li>
+                    <li className="nav-btn">
+                        <NavbarItem icon={<PlusIcon />} >
+                            <DropDownMenu />
+                        </NavbarItem>
                     </li>
                 </ul>
             </div>
