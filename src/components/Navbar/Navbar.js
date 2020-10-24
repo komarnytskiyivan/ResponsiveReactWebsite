@@ -81,10 +81,27 @@ function Navbar() {
                         </Link>
                         )}
                     </li>
-                    <li className="nav-btn">
+                    {/* <li className="nav-btn">
                         <NavbarItem icon={<PlusIcon />} >
                             <DropDownMenu />
                         </NavbarItem>
+                    </li> */}
+                    <li>
+                    <div className="">
+                <a className="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    User
+                    <i className="fa fa-user"></i></a>
+                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <ul className="list-group list-group-flush" id="user-info-dropmenu">
+                        <li className="list-group-item">
+                            <a className="text-secondary" onClick="return logOut();" href="index.html">Log out</a>
+                        </li>
+                        <li className="list-group-item">
+                            <a className="text-secondary" href="signin.html">Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
                     </li>
                 </ul>
             </div>

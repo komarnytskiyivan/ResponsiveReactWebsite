@@ -180,3 +180,12 @@
     height: 120px;
   }
 }
+.list-group-item{
+  justify-content: center;
+  align-items: center;
+  text-align: center
+}
+.dropdown-menu{
+  position: inherit;
+  
+}
