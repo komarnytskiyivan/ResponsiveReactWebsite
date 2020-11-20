@@ -1,13 +1,24 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import {Button} from '../Button/Button'
 import {Link} from 'react-router-dom'
 import './PrintSection.css'
 function PrintSection({
     lightBg,topLine,lightText,lightTextDesc,headLine,description,buttonLabel,img, alt, imgStart
 }) {
+    // function set_success_message(text){
+    //     var em = useRef(null)
+    //     em.style.visibility = "visible";
+    //     if (text == "" ){
+    //         em.style.visibility = "hidden";
+    //     }
+    //     em.innerHTML = text;
+
+    // }
     return (
         <div className={lightBg ? 'home__print-section' : 'home__print-section darkBg'}>
             <div className="container">
+                <div class="alert alert-danger" role="alert" > </div>
+                <div class="alert alert-success" role="alert" > </div>
                 <div className="row home__print-row"
                 style={{display:'flex',flexDirection: imgStart === 'start' ? 'row-reverse' : 'row'}}
                 >
